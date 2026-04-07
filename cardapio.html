@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <img src="img/logo.jpg" alt="Logo da loja" class="logo">
+    <meta author content="Sophia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="top-bar"></div>
+ <div class="hero-bg"></div>
+<header>
+  <h1>DELÍCIAS DE BOLO</h1>
+  <p>Bolos caseiros feitos com carinho</p>
+</div>
+
+
+<nav>
+  <a href="index.html">Início</a>
+  <a href="cardapio.html">Cardápio</a>
+  <button class="btn-transparente" onclick="comprar()">Contato</button>
+  <a href="index.html#sobrenos">Sobre Nós</a>
+  <a href="degustacao.html">Degustação para Eventos</a>
+</nav>
+
+</header>
+
+    <h2 class="titulo">Cardápio</h2>
+   
+    <div class="container">
+        <div class="card">
+            <img src="img/chocolate.jpg" alt="Bolo de chocolate">
+            <h3>Bolo de Chocolate com ganache de chocolate belga</h3>
+            <p>Intenso e irresistível, esse bolo é perfeito para os amantes de chocolate. Massa úmida, sabor marcante e ideal com uma calda ou recheio bem cremoso. </p>
+            <p><strong>R$ 34,90</strong></p>
+            <button onclick="abrirModal('bolo1')">Saiba mais</button>
+        </div>
+
+            <div class="card">
+            <img src="img/cenoura.jpg" alt="Bolo de cenoura">
+            <h3>Bolo de Cenoura com cobertura de chocolate belga</h3>
+            <p>Bolo macio e fofinho, feito com cenouras frescas que garantem uma textura leve e sabor suave. Com uma cobertura cremosa de chocolate belga.</p>
+            <p><strong>R$ 29,90</strong></p>
+            <button onclick="abrirModal('bolo2')">Saiba mais</button>
+         </div>
+
+            <div class="card">
+            <img src="img/limao.jpg" alt="Bolo de limão">
+            <h3>Bolo de Limão com cobertura de limão</h3>
+            <p>Refrescante e leve, esse bolo é perfeito para quem gosta de sabores cítricos. A massa é úmida e delicada, com um toque de limão que se destaca. A cobertura de brigadeiro de limão com menta adiciona uma textura suave e um sabor doce que complementa perfeitamente o sabor do limão.</p>
+            <p><strong>R$ 32,90</strong></p>
+            <button onclick="abrirModal('bolo3')">Saiba mais</button>
+            </div>
+
+            <div class="card">
+            <img src="img/coco.jpg" alt="Bolo de coco">
+            <h3>Bolo de Coco com cobertura de beijinho</h3>
+            <p>Delicado e aromático, feito com coco que traz leveza e um toque tropical. Com uma coberturaa de beijinho.</p>
+            <p><strong>R$ 30,90</strong></p>
+            <button onclick="abrirModal('bolo4')">Saiba mais</button>
+            </div>
+
+            <div class="card">
+            <img src="img/morango.jpg" alt="Bolo de morango">
+            <h3>Bolo de Morango com cobertura de merengue</h3>
+            <p> Suave e levemente adocicado, com um sabor frutado delicioso. Com um incrível recheio de merengue cremoso e pedaços de morango, trazendo frescor ao bolo.</p>
+            <p><strong>R$ 33,90</strong></p>
+            <button onclick="abrirModal('bolo5')">Saiba mais</button>
+            </div>
+
+            <div class="card">
+            <img src="img/Maracujá.jpg" alt="Bolo de maracuja">
+            <h3>Bolo de Maracujá com recheio de geleia de maracuja e chocolate branco</h3>
+            <p>Bolo leve e fofinho com o sabor marcante do maracujá, trazendo aquele equilíbrio perfeito entre o doce e o azedinho e o doce do chantilly e chocolate branco</p>
+            <p><strong>R$ 34,90</strong></p>
+            <button onclick="abrirModal('bolo6')">Saiba mais</button>
+            </div>
+
+            <div class="card">
+            <img src="img/fatia.jpg" alt="Bolo em fatia">
+            <h3>Fatia de bolo 100g (escolha seu sabor)</h3>
+            <p>Deliciosa fatia de bolo, perfeita para saborear a qualquer hora do dia. Podendo escolher entre todos os sabores disponíveis na loja com um adicional de calda de leite ninho ou chocolate, cada fatia é uma explosão de sabor e textura que vai conquistar seu paladar.</p>
+            <p><strong></strong>R$ 12,90</strong></p>
+            <button onclick="abrirModal('bolo7')">Saiba mais</button>
+            </div>
+
+            <div class="card">
+            <img src="img/Bento.jpg" alt="Bento cake">
+            <h3>Bento cake 
+                (personalizado)</h3>
+            <p>Delicioso bento cake, perfeito para presentear ou tornar qualquer momento ainda mais especial. Disponível em todos os sabores da loja, ele combina sabor, carinho e criatividade em cada detalhe.</p>
+            <p><strong>R$ 35,00</strong></p>
+            <button onclick="abrirModal('bolo8')">Saiba mais</button>
+            </div>
+
+            <div class="card">
+            <img src="img/redvelvet.jpg" alt="Red velvet">
+            <h3> Red velvet</h3>
+            <p>Delicioso bolo de red velvet, com cobertura de cream chesse </p>
+            <p><strong>R$ 35,00</strong></p>
+            <button onclick="abrirModal('bolo9')">Saiba mais</button>
+            </div>
+            
+
+
+
+
+
+
+            </div>
+
+           
+      </div>
+    
+    </div>
+    <div id="bolo1" class="modal">
+        <div class="modal-conteudo">
+          <span onclick="fecharModal('bolo1')">&times;</span>
+          <img src="img/chocolate.jpg" alt="Bolo de chocolate">
+          <h2>Bolo de chocolate com ganache de chocolate belga</h2>
+            <p>
+             Ingredientes: Farinha de trigo, açúcar, ovos, leite, chocolate em pó 50% cacau, manteiga, fermento em pó.
+             Ganache: chocolate belga meio amargo, creme de leite.
+            </p>
+            <P>
+                ⚠️ Alérgicos: contém glúten, leite e derivados, ovos. Pode conter traços de amendoim, castanhas e soja.
+            </P>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+
+        <div id="bolo2" class="modal">
+        <div class="modal-conteudo">
+            <span onclick="fecharModal('bolo2')">&times;</span>
+            <img src="img/cenoura.jpg" alt="Bolo de cenoura">
+            <h2>Bolo de cenoura com cobertura de chocolate belga</h2>
+            <p>
+             Ingredientes: Cenoura, farinha de trigo, açúcar, ovos, óleo, fermento em pó.
+             Cobertura: chocolate belga, creme de leite, manteiga.
+            </p>
+            <P>
+                ⚠️ Alérgicos: contém glúten, leite e derivados, ovos. Pode conter traços de amendoim, castanhas e soja.
+            </P>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+
+    <div id="bolo3" class="modal">
+        <div class="modal-conteudo">
+            <span onclick="fecharModal('bolo3')">&times;</span>
+             <img src="img/limao.jpg" alt="Bolo de limão">
+            <h2>Bolo de limão com cobertura de limão</h2>
+            <p>
+             Ingredientes: Farinha de trigo, açúcar, ovos, leite, manteiga, suco de limão, raspas de limão, fermento em pó.
+             Cobertura: leite condensado, suco de limão.
+            </p>
+            <P>
+                ⚠️ Alérgicos: contém glúten, leite e derivados, ovos. Pode conter traços de amendoim, castanhas e soja.
+            </P>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+
+      <div id="bolo4" class="modal">
+        <div class="modal-conteudo">
+            <span onclick="fecharModal('bolo4')">&times;</span>
+            <img src="img/coco.jpg" alt="Bolo de coco">
+            <h2>Bolo de coco com cobertura de beijinho</h2>
+            <p>
+             Ingredientes: Farinha de trigo, açúcar, ovos, leite de coco, manteiga, coco ralado, fermento em pó.
+             Cobertura (beijinho): leite condensado, coco ralado, manteiga.
+            </p>
+            <P>
+                ⚠️ Alérgicos: contém glúten, leite e derivados, ovos. Pode conter traços de amendoim, castanhas e soja.
+            </P>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+
+     <div id="bolo5" class="modal">
+        <div class="modal-conteudo">
+            <span onclick="fecharModal('bolo5')">&times;</span>
+            <img src="img/morango.jpg" alt="Bolo de morango">
+            <h2>Bolo de morango com cobertura de merengue</h2>
+            <p>
+             Ingredientes: Farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó, morangos frescos.
+             Cobertura (merengue): claras, açúcar
+            </p>
+            <P>
+                ⚠️ Alérgicos: contém glúten, leite e derivados, ovos. Pode conter traços de amendoim, castanhas e soja.
+            </P>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+
+    <div id="bolo6" class="modal">
+        <div class="modal-conteudo">
+            <span onclick="fecharModal('bolo6')">&times;</span>
+             <img src="img/Maracujá.jpg" alt="Bolo de maracuja">
+            <h2>Bolo de maracujá com recheio de geleia de maracujá e chocolate branco</h2>
+            <p>
+             Ingredientes: Farinha de trigo, açúcar, ovos, leite, manteiga, suco de maracujá, fermento em pó.
+             Cobertura: geleia de maracujá, chocolate branco, creme de leite.
+            </p>
+            <P>
+                ⚠️ Alérgicos: contém glúten, leite e derivados, ovos. Pode conter traços de amendoim, castanhas e soja.
+            </P>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+    
+    <div id="bolo7" class="modal">
+        <div class="modal-conteudo">
+            <span onclick="fecharModal('bolo7')">&times;</span>
+            <img src="img/fatia.jpg" alt="Bolo em fatia">
+            <h2>Fatia de bolo (100g) – escolha seu sabor</h2>
+            <p>
+             Enviar o sabor da fatia escolhido imediatamente após a compra, juntamente com o sabor da calda (leitinho ou chocolate).
+            </p>
+            <P>
+                ⚠️ Alérgicos: contém glúten, leite e derivados, ovos. Pode conter traços de amendoim, castanhas e soja.
+            </P>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+
+    <div id="bolo8" class="modal">
+        <div class="modal-conteudo">
+            <span onclick="fecharModal('bolo8')">&times;</span>
+            <img src="img/Bento.jpg" alt="Bento cake">
+            <h2>Bento Cake personalizado</h2>
+            <p>
+             A massa pode ser de qualquer sabor disponível no cardápio.
+             Personalização: A frase e o desenho podem ser personalizados.
+             Caso não sejam enviados em até 30 minutos, será feito no modelo padrão conforme foto.
+            </p>
+            <P>
+                ⚠️ Alérgicos: contém glúten, leite e derivados, ovos. Pode conter traços de amendoim, castanhas e soja.
+            </P>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+    
+        <div id="bolo9" class="modal">
+        <div class="modal-conteudo">
+            <span onclick="fecharModal('bolo9')">&times;</span>
+            <img src="img/redvelvet.jpg" alt="Red velvet" class="img">
+            <h2>Bolo Red Velvet com cobertura de cream cheese</h2>
+            <p>
+             Ingredientes: Farinha de trigo, açúcar, ovos, leite, manteiga, cacau em pó, corante vermelho, fermento, vinagre.
+             Cobertura: cream cheese, açúcar de confeiteiro, manteiga, baunilha.
+            </p>
+            <P>
+                ⚠️ Alérgicos: contém glúten, leite e derivados, ovos. Pode conter traços de amendoim, castanhas e soja.
+            </P>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+    
+
+        
+        
+</body>
+</html>
