@@ -251,7 +251,13 @@ nav a.active {
 }
 
 .degusta-p {
-    text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.degusta-p li {
+  margin-bottom: 5px;
 }
 
 .preco-h2{
